@@ -1,0 +1,245 @@
+<!--
+|--------------------------------------------------
+| PLEASE MAKE A NEW HTML FILE, AND 
+| COPY INDIVIDUAL QUESTIONS ALONG WITH CODE TO RUN 
+| SEPARATELY.
+|--------------------------------------------------
+-->
+
+
+
+<!-- 1. Select an <h2> tag with id of text and change its inner text to
+    “Hello World”. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 21</title>
+    
+</head>
+<body>
+    <h2 id="text">bhfb</h2>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const h2Element = document.querySelector("h2#text");
+        h2Element.innerText = "Hello World";
+      });</script>
+</body>
+</html> -->
+
+<!-- 2. Apply following style to the same h2 using Javascript DOM
+    Method.
+    colour: red,
+    fontWeight: bold,
+    textTransform: uppercase -->
+<!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>assignment 21</title>
+        
+    </head>
+    <body>
+        <h2 id="text">bhfb</h2>
+        <script>
+    const h2Element = document.querySelector("h2#text");
+    document.addEventListener("DOMContentLoaded", function() {
+            h2Element.innerText = "Hello World";        
+         });
+          h2Element.style.color = "red";
+          h2Element.style.fontWeight = "bold";
+          h2Element.style.textTransform = "uppercase";
+          </script>
+    </body>
+    </html> -->
+
+<!-- 3. Create a simple calculator that takes the input from
+input1, input 2 and add them together. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment 21 | Q3.</title>
+  </head>
+  <body>
+    <input type="number" id="input1" placeholder="Enter number 1" />
+    <input type="number" id="input2" placeholder="Enter number 2" />
+    <button id="calculateBtn">Calculate</button>
+    <div id="result"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const calculateBtn = document.getElementById("calculateBtn");
+        calculateBtn.addEventListener("click", function () {
+          const input1 = parseFloat(document.getElementById("input1").value);
+          const input2 = parseFloat(document.getElementById("input2").value);
+
+          if (isNaN(input1) || isNaN(input2)) {
+            document.getElementById("result").textContent =
+              "Please enter valid numbers.";
+          } else {
+            const sum = input1 + input2;
+            document.getElementById("result").textContent = "Sum: " + sum;
+          }
+        });
+      });
+    </script>
+  </body>
+</html> -->
+
+<!-- 4. What is the error in the following code? -->
+<!-- ans. -> write getElementByClassName instead of getElementById -->
+
+<!-- 5. Using JS Dom select a button and set its onclick event to
+logging hello in the console. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="loggingBtn">Click me and see what happens</button>
+    <script>
+        const loggingBtn = document.getElementById("loggingBtn");
+        loggingBtn.addEventListener("click", function () {
+            console.log("Hello");
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!-- 
+6. Using alert, prevent a person from leaving the screen using JS
+DOM. -->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML DOM onbeforeunload attribute
+	</title>
+</head>
+
+<body>
+
+	<h3>
+		<a href="https://www.google.com/">HTML DOM onbeforeunload attribute</a>
+	</h3>
+
+
+	<script>
+		window.addEventListener(
+			"beforeunload", function (event) {
+			event.returnValue =
+			"This document is ready to load";
+		});
+	</script>
+</body>
+
+</html> -->
+
+
+<!-- 7. Select all the h2 tags on screen and change their colour to purple. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEST-7 | ASSIGNMENT-21</title>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi et alias repellendus saepe magni veniam, porro voluptas exercitationem eligendi asperiores sunt modi sint nesciunt similique, consequuntur impedit quisquam aut ullam.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, pariatur.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore soluta doloremque? Iste repellat pariatur illo laborum odio est quod?</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sint quaerat alias sequi, repudiandae modi.</h2>
+    <script>
+            const h2 = document.querySelectorAll("h2");
+            h2.forEach((e) => {
+                e.style.color = "purple";
+            });
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- 8. Create a new <h4> tag on the screen using JS DOM. -->
+  <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEST-7 | ASSIGNMENT-21</title>
+</head>
+<body>
+    <body>
+        <div id="container"></div>      
+    <script>
+            const h4 = document.createElement("h4");
+             h4.textContent = "trbtrbgbtrbtrbbgb gbgb gb";
+            const container = document.getElementById("container");
+            container.appendChild(h4);
+
+    </script>
+</body>
+</html> -->
+
+
+<!-- 9. Remove an element from the screen using js dom. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEST-9 | ASSIGNMENT-21</title>
+</head>
+
+<body>
+
+    <body>
+        <div id="container">
+            <h3 class="ip">Hello i am beneath the water!!</h3>
+            <h3 id="op">Hello i am under the water!!</h3>
+        </div>
+        <script>
+            const elementToRemove = document.getElementById("op");
+            if (elementToRemove) {
+                elementToRemove.parentNode.removeChild(elementToRemove);
+            }
+
+        </script>
+    </body>
+
+</html>
+
+
+<!-- 10. Get the number of <p> tags on the screen using JS DOM. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEST-10 | ASSIGNMENT-21</title>
+</head>
+<body>
+    <body>
+        <div id="container">
+            <p class="ip">Hello i am beneath the water!!</p>
+            <p id="op">Hello i am under the water!!</p>
+        </div>
+        <script>
+            const p = document.getElementsByTagName("p");
+            console.log(p.length);
+        </script>
+    </body>
+</body>
+</html> -->
